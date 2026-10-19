@@ -2,10 +2,6 @@ package io.github.twister716.hbmutilities.client;
 
 import io.github.twister716.hbmutilities.HbmUtilities;
 import io.github.twister716.hbmutilities.bomb.*;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.contents.TranslatableContents;
@@ -15,6 +11,9 @@ import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @EventBusSubscriber(modid = HbmUtilities.MODID, value = Dist.CLIENT)
 public final class BombTooltipHandler {

@@ -1,6 +1,7 @@
 package io.github.twister716.hbmutilities.bomb;
 
 import com.hbm.data.ExplosionData;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.DoubleSupplier;

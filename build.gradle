@@ -104,6 +104,14 @@ dependencies {
     implementation "curse.maven:ntm-decentralized-edition-1719854:${ntm_de_file_id}"
 }
 
+tasks.named('jar') {
+    var modId = mod_id
+    from(files('LICENSE', 'LICENSE.LESSER')) {
+        rename { "${it}_${modId}" }
+    }
+}
+
+
 // This block of code expands all declared replace properties in the specified resource targets.
 // A missing property will result in an error. Properties are expanded using ${} Groovy notation.
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

@@ -3,12 +3,6 @@ package io.github.twister716.hbmutilities.bomb;
 import com.hbm.blockentity.bomb.BlockEntityNukeBalefire;
 import com.hbm.blocks.bomb.*;
 import com.hbm.data.ExplosionData;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.function.DoubleSupplier;
-import java.util.function.Function;
-
 import com.hbm.explosion.ExplosionNukeSmall;
 import com.hbm.items.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -16,6 +10,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.function.DoubleSupplier;
+import java.util.function.Function;
 
 public final class BombTraits {
 

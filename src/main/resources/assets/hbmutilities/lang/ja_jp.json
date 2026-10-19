@@ -7,7 +7,6 @@
   "trait.hbmutilities.explosion.balefire": "ベールファイア爆弾",
   "trait.hbmutilities.explosion.salted": "加塩原子爆弾",
   "trait.hbmutilities.explosion.conventional": "通常爆弾",
-
   "trait.hbmutilities.explosion.missile_he": "高性能炸薬弾頭 %s",
   "trait.hbmutilities.explosion.missile_ic": "焼夷弾頭 %s",
   "trait.hbmutilities.explosion.missile_cl": "クラスター弾頭 %s",
@@ -24,7 +23,6 @@
   "trait.hbmutilities.explosion.missile_taint": "エビルスライム弾頭",
   "trait.hbmutilities.explosion.missile_tectonic": "地殻変動弾頭",
   "trait.hbmutilities.explosion.missile_abm": "迎撃用ミサイル",
-
   "trait.hbmutilities.fallout": "放射性降下物",
   "trait.hbmutilities.folkvangr_field": " フォルクヴァングルフィールド：%sm",
   "trait.hbmutilities.radius": " 範囲：%sm",

@@ -7,7 +7,6 @@
   "trait.hbmutilities.explosion.balefire": "Balefire Bomb",
   "trait.hbmutilities.explosion.salted": "Salted Bomb",
   "trait.hbmutilities.explosion.conventional": "Conventional Bomb",
-
   "trait.hbmutilities.explosion.missile_he": "HE Warhead %s",
   "trait.hbmutilities.explosion.missile_ic": "IC Warhead %s",
   "trait.hbmutilities.explosion.missile_cl": "CL Warhead %s",
@@ -24,7 +23,6 @@
   "trait.hbmutilities.explosion.missile_taint": "Evil Slime Warhead",
   "trait.hbmutilities.explosion.missile_tectonic": "Tectonic Warhead",
   "trait.hbmutilities.explosion.missile_abm": "AB Missile",
-
   "trait.hbmutilities.fallout": "Fallout",
   "trait.hbmutilities.folkvangr_field": " Fölkvangr Field: %sm",
   "trait.hbmutilities.radius": " Radius: %sm",
