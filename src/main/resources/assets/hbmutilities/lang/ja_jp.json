@@ -7,7 +7,27 @@
   "trait.hbmutilities.explosion.balefire": "ベールファイア爆弾",
   "trait.hbmutilities.explosion.salted": "加塩原子爆弾",
   "trait.hbmutilities.explosion.conventional": "通常爆弾",
+
+  "trait.hbmutilities.explosion.missile_he": "高性能炸薬弾頭 %s",
+  "trait.hbmutilities.explosion.missile_ic": "焼夷弾頭 %s",
+  "trait.hbmutilities.explosion.missile_cl": "クラスター弾頭 %s",
+  "trait.hbmutilities.explosion.missile_bu": "バンカーバスター弾頭 %s",
+  "trait.hbmutilities.explosion.missile_nuclear": "核弾頭",
+  "trait.hbmutilities.explosion.missile_thermonuclear": "熱核弾頭",
+  "trait.hbmutilities.explosion.missile_micro": "マイクロ核弾頭",
+  "trait.hbmutilities.explosion.missile_doomsday": "終末核弾頭",
+  "trait.hbmutilities.explosion.missile_schrabidium": "シュラビジウム弾頭",
+  "trait.hbmutilities.explosion.missile_stealth": "ステルスミサイル",
+  "trait.hbmutilities.explosion.missile_decoy": "デコイミサイル",
+  "trait.hbmutilities.explosion.missile_emp": "EMP弾頭",
+  "trait.hbmutilities.explosion.missile_singularity": "シンギュラリティ弾頭",
+  "trait.hbmutilities.explosion.missile_taint": "エビルスライム弾頭",
+  "trait.hbmutilities.explosion.missile_tectonic": "地殻変動弾頭",
+  "trait.hbmutilities.explosion.missile_abm": "迎撃用ミサイル",
+
   "trait.hbmutilities.fallout": "放射性降下物",
   "trait.hbmutilities.radius": " 範囲：%sm",
-  "trait.hbmutilities.power": " 威力：%s"
+  "trait.hbmutilities.power": " 威力：%s",
+  "trait.hbmutilities.count": " 子弾数：%s",
+  "trait.hbmutilities.depth": " 深度：%sm"
 }

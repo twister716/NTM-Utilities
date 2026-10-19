@@ -7,7 +7,27 @@
   "trait.hbmutilities.explosion.balefire": "Balefire Bomb",
   "trait.hbmutilities.explosion.salted": "Salted Bomb",
   "trait.hbmutilities.explosion.conventional": "Conventional Bomb",
+
+  "trait.hbmutilities.explosion.missile_he": "HE Warhead %s",
+  "trait.hbmutilities.explosion.missile_ic": "IC Warhead %s",
+  "trait.hbmutilities.explosion.missile_cl": "CL Warhead %s",
+  "trait.hbmutilities.explosion.missile_bu": "BU Warhead %s",
+  "trait.hbmutilities.explosion.missile_nuclear": "Nuclear Warhead",
+  "trait.hbmutilities.explosion.missile_thermonuclear": "Thermonuclear Warhead",
+  "trait.hbmutilities.explosion.missile_micro": "Micro Nuclear Warhead",
+  "trait.hbmutilities.explosion.missile_doomsday": "Doomsday Nuclear Warhead",
+  "trait.hbmutilities.explosion.missile_schrabidium": "Schrabidium Warhead",
+  "trait.hbmutilities.explosion.missile_stealth": "Stealth Missile",
+  "trait.hbmutilities.explosion.missile_decoy": "Decoy Missile",
+  "trait.hbmutilities.explosion.missile_emp": "EMP Warhead",
+  "trait.hbmutilities.explosion.missile_singularity": "Singularity Warhead",
+  "trait.hbmutilities.explosion.missile_taint": "Evil Slime Warhead",
+  "trait.hbmutilities.explosion.missile_tectonic": "Tectonic Warhead",
+  "trait.hbmutilities.explosion.missile_abm": "AB Missile",
+
   "trait.hbmutilities.fallout": "Fallout",
   "trait.hbmutilities.radius": " Radius: %sm",
-  "trait.hbmutilities.power": " Power: %s"
+  "trait.hbmutilities.power": " Power: %s",
+  "trait.hbmutilities.count": " Count: %s",
+  "trait.hbmutilities.depth": " Depth: %sm"
 }

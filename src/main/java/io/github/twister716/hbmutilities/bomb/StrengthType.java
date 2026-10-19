@@ -4,8 +4,12 @@ import io.github.twister716.hbmutilities.HbmUtilities;
 import java.util.Locale;
 
 public enum StrengthType {
+    NONE,
     RADIUS,
-    POWER;
+    POWER,
+    COUNT,
+    DEPTH;
+
 
     public String getTranslationKey() {
         return "trait." + HbmUtilities.MODID + "." + name().toLowerCase(Locale.ROOT);
