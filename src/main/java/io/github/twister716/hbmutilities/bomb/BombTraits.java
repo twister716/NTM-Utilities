@@ -32,8 +32,8 @@ public final class BombTraits {
         register(NukeMike.class, ExplosionType.THERMONUCLEAR, ExplosionData.MIKE_RADIUS::get, true);
         register(NukeTsar.class, ExplosionType.THERMONUCLEAR, ExplosionData.TSAR_RADIUS::get, true);
         register(NukeN2.class, ExplosionType.EXTREME, ExplosionData.N2_RADIUS::get, false);
-        register(NukePrototype.class, ExplosionType.SCHRABIDIUM, ExplosionData.PROTOTYPE_RADIUS::get, false);
-        register(NukeFleija.class, ExplosionType.SCHRABIDIUM, ExplosionData.FLEIJA_RADIUS::get, false);
+        register(NukePrototype.class, BombTrait.folkvangr(ExplosionType.SCHRABIDIUM, ExplosionData.PROTOTYPE_RADIUS::get));
+        register(NukeFleija.class, BombTrait.folkvangr(ExplosionType.SCHRABIDIUM, ExplosionData.FLEIJA_RADIUS::get));
         register(NukeSolinium.class, ExplosionType.SOLINIUM, ExplosionData.SOLINIUM_RADIUS::get, false);
         register(NukeBalefire.class, ExplosionType.BALEFIRE, () -> BlockEntityNukeBalefire.DESTRUCTION_RANGE, false);
         register(BlockCrashedBomb.class, BombTraits::getDudTraits);
@@ -95,7 +95,7 @@ public final class BombTraits {
         registerItem(ModItems.MISSILE_MICRO,
                 new BombTrait(ExplosionType.MISSILE_MICRO, () -> (int) ExplosionNukeSmall.PARAMS_HIGH.blastRadius, true));
         registerItem(ModItems.MISSILE_SCHRABIDIUM,
-                new BombTrait(ExplosionType.MISSILE_SCHRABIDIUM, ExplosionData.A_SCHRAB_RADIUS::get, false));
+                BombTrait.folkvangr(ExplosionType.MISSILE_SCHRABIDIUM, ExplosionData.A_SCHRAB_RADIUS::get));
 
         registerItem(ModItems.MISSILE_STEALTH, BombTrait.power(ExplosionType.MISSILE_STEALTH, () -> 20));
         registerItem(ModItems.MISSILE_DECOY, BombTrait.power(ExplosionType.MISSILE_DECOY, () -> 4));

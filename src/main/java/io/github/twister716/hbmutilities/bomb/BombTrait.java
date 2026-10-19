@@ -20,6 +20,10 @@ public record BombTrait(ExplosionType type, StrengthType strengthType, DoubleSup
         return new BombTrait(type, StrengthType.POWER, powerSupplier, false, 0, 0, List.of());
     }
 
+    public static BombTrait folkvangr(ExplosionType type, DoubleSupplier radiusSupplier) {
+        return new BombTrait(type, StrengthType.FOLKVANGR_FIELD, radiusSupplier, false, 0, 0, List.of());
+    }
+
     public static BombTrait label(ExplosionType type) {
         return new BombTrait(type, StrengthType.NONE, () -> 0, false, 0, 0, List.of());
     }

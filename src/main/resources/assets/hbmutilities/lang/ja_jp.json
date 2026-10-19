@@ -26,6 +26,7 @@
   "trait.hbmutilities.explosion.missile_abm": "迎撃用ミサイル",
 
   "trait.hbmutilities.fallout": "放射性降下物",
+  "trait.hbmutilities.folkvangr_field": " フォルクヴァングルフィールド：%sm",
   "trait.hbmutilities.radius": " 範囲：%sm",
   "trait.hbmutilities.power": " 威力：%s",
   "trait.hbmutilities.count": " 子弾数：%s",

@@ -26,6 +26,7 @@
   "trait.hbmutilities.explosion.missile_abm": "AB Missile",
 
   "trait.hbmutilities.fallout": "Fallout",
+  "trait.hbmutilities.folkvangr_field": " Fölkvangr Field: %sm",
   "trait.hbmutilities.radius": " Radius: %sm",
   "trait.hbmutilities.power": " Power: %s",
   "trait.hbmutilities.count": " Count: %s",

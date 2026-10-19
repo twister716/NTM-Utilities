@@ -6,6 +6,7 @@ import java.util.Locale;
 public enum StrengthType {
     NONE,
     RADIUS,
+    FOLKVANGR_FIELD,
     POWER,
     COUNT,
     DEPTH;
