@@ -8,5 +8,6 @@
   "trait.hbmutilities.explosion.salted": "Salted Bomb",
   "trait.hbmutilities.explosion.conventional": "Conventional Bomb",
   "trait.hbmutilities.fallout": "Fallout",
-  "trait.hbmutilities.radius": " Radius: %sm"
+  "trait.hbmutilities.radius": " Radius: %sm",
+  "trait.hbmutilities.power": " Power: %s"
 }

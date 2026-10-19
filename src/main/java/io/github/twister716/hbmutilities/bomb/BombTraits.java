@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.function.IntSupplier;
+
+import com.hbm.explosion.ExplosionNukeSmall;
 import net.minecraft.world.level.block.Block;
 
 public final class BombTraits {
@@ -19,15 +21,36 @@ public final class BombTraits {
         register(NukeBoy.class, ExplosionType.NUCLEAR, ExplosionData.BOY_RADIUS::get, true);
         register(NukeMan.class, ExplosionType.NUCLEAR, ExplosionData.MAN_RADIUS::get, true);
         register(NukeMike.class, ExplosionType.THERMONUCLEAR, ExplosionData.MIKE_RADIUS::get, true);
-        register(NukeTsar.class,
-                new BombTrait(ExplosionType.THERMONUCLEAR, ExplosionData.TSAR_RADIUS::get, true),
-                new BombTrait(ExplosionType.NUCLEAR, ExplosionData.MAN_RADIUS::get, true));
+        register(NukeTsar.class, ExplosionType.THERMONUCLEAR, ExplosionData.TSAR_RADIUS::get, true);
         register(NukeN2.class, ExplosionType.EXTREME, ExplosionData.N2_RADIUS::get, false);
         register(NukePrototype.class, ExplosionType.SCHRABIDIUM, ExplosionData.PROTOTYPE_RADIUS::get, false);
         register(NukeFleija.class, ExplosionType.SCHRABIDIUM, ExplosionData.FLEIJA_RADIUS::get, false);
         register(NukeSolinium.class, ExplosionType.SOLINIUM, ExplosionData.SOLINIUM_RADIUS::get, false);
         register(NukeBalefire.class, ExplosionType.BALEFIRE, () -> BlockEntityNukeBalefire.DESTRUCTION_RANGE, false);
         register(BlockCrashedBomb.class, BombTraits::getDudTraits);
+
+        register(BlockDynamite.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 8));
+        register(BlockTNT.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 10));
+        register(BlockSemtex.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 12));
+        register(BlockC4.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 15));
+
+        register(BlockChargeDynamite.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 4));
+        register(BlockChargeMiner.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 4));
+        register(BlockChargeSemtex.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 10));
+        register(BlockChargeC4.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 15));
+
+        register(BlockLandmineAP.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 3));
+        register(BlockLandmineShrap.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 3));
+        register(BlockLandmineHE.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 4));
+        register(BlockLandmineFat.class, BombTrait.power(ExplosionType.NUCLEAR, () -> 10));
+        register(BlockLandmineNaval.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 25));
+
+        register(BlockDetCharge.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 15));
+        register(BlockDetMiner.class, BombTrait.power(ExplosionType.CONVENTIONAL, () -> 4));
+        register(BlockDetNuke.class, ExplosionType.NUCLEAR, ExplosionData.MISSILE_RADIUS::get, true);
+
+        register(BlockFissureBomb.class, BombTrait.power(ExplosionType.NUCLEAR,
+                () -> (int) ExplosionNukeSmall.PARAMS_MEDIUM.blastRadius));
     }
 
     private BombTraits() {
@@ -62,7 +85,7 @@ public final class BombTraits {
                     () -> (int) (ExplosionData.FATMAN_RADIUS.get() * 1.25), false));
             case NUKE -> List.of(new BombTrait(ExplosionType.NUCLEAR, () -> 35, true));
             case SALTED -> List.of(new BombTrait(ExplosionType.SALTED, () -> 25, true, 25));
-            case CONVENTIONAL -> List.of();
+            case CONVENTIONAL -> List.of(BombTrait.power(ExplosionType.CONVENTIONAL, () -> 35));
         };
     }
 }

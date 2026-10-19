@@ -8,5 +8,6 @@
   "trait.hbmutilities.explosion.salted": "加塩原子爆弾",
   "trait.hbmutilities.explosion.conventional": "通常爆弾",
   "trait.hbmutilities.fallout": "放射性降下物",
-  "trait.hbmutilities.radius": " 範囲：%sm"
+  "trait.hbmutilities.radius": " 範囲：%sm",
+  "trait.hbmutilities.power": " 威力：%s"
 }

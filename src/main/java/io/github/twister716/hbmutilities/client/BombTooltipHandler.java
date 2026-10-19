@@ -4,6 +4,8 @@ import io.github.twister716.hbmutilities.HbmUtilities;
 import io.github.twister716.hbmutilities.bomb.BombTrait;
 import io.github.twister716.hbmutilities.bomb.BombTraits;
 import java.util.List;
+
+import io.github.twister716.hbmutilities.bomb.StrengthType;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
@@ -34,11 +36,11 @@ public final class BombTooltipHandler {
 
             BombTrait trait = traits.get(i);
             tooltip.add(heading(trait.type().getTranslationKey(), trait.type().getColor()));
-            tooltip.add(radiusLine(trait.getRadius()));
+            tooltip.add(strengthLine(trait.strengthType(), trait.getStrength()));
 
             if (trait.hasFallout()) {
                 tooltip.add(heading("trait." + HbmUtilities.MODID + ".fallout", ChatFormatting.DARK_GREEN));
-                tooltip.add(radiusLine(trait.getFalloutRadius()));
+                tooltip.add(strengthLine(StrengthType.RADIUS, trait.getFalloutRadius()));
             }
         }
     }
@@ -50,8 +52,8 @@ public final class BombTooltipHandler {
                 .withStyle(color);
     }
 
-    private static Component radiusLine(int radius) {
-        return Component.translatable("trait." + HbmUtilities.MODID + ".radius", radius)
+    private static Component strengthLine(StrengthType strengthType, int value) {
+        return Component.translatable(strengthType.getTranslationKey(), value)
                 .withStyle(ChatFormatting.YELLOW);
     }
 }
