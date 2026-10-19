@@ -7,6 +7,7 @@
   "trait.hbmutilities.explosion.balefire": "ベールファイア爆弾",
   "trait.hbmutilities.explosion.salted": "加塩原子爆弾",
   "trait.hbmutilities.explosion.conventional": "通常爆弾",
+  "trait.hbmutilities.explosion.antimatter": "反物質爆弾",
   "trait.hbmutilities.explosion.missile_he": "高性能炸薬弾頭 %s",
   "trait.hbmutilities.explosion.missile_ic": "焼夷弾頭 %s",
   "trait.hbmutilities.explosion.missile_cl": "クラスター弾頭 %s",

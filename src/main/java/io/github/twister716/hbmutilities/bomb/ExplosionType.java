@@ -23,7 +23,7 @@ public enum ExplosionType {
     MISSILE_NUCLEAR(ChatFormatting.DARK_GREEN),
     MISSILE_THERMONUCLEAR(ChatFormatting.GOLD),
     MISSILE_MICRO(ChatFormatting.DARK_GREEN),
-    MISSILE_DOOMSDAY(ChatFormatting.DARK_PURPLE),
+    MISSILE_DOOMSDAY(ChatFormatting.GOLD),
     MISSILE_SCHRABIDIUM(ChatFormatting.AQUA),
     MISSILE_STEALTH(ChatFormatting.GRAY),
     MISSILE_DECOY(ChatFormatting.GRAY),
@@ -31,7 +31,9 @@ public enum ExplosionType {
     MISSILE_SINGULARITY(ChatFormatting.DARK_GRAY),
     MISSILE_TAINT(ChatFormatting.LIGHT_PURPLE),
     MISSILE_TECTONIC(ChatFormatting.DARK_RED),
-    MISSILE_ABM(ChatFormatting.DARK_GREEN);
+    MISSILE_ABM(ChatFormatting.DARK_GREEN),
+
+    ANTIMATTER(ChatFormatting.DARK_PURPLE);
 
     private final ChatFormatting color;
 

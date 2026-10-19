@@ -102,6 +102,9 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
     implementation "curse.maven:ntm-decentralized-edition-1719854:${ntm_de_file_id}"
+
+    compileOnly "curse.maven:ntm-de-space-1751164:${ntm_de_space_file_id}"
+    runtimeOnly "curse.maven:ntm-de-space-1751164:${ntm_de_space_file_id}"
 }
 
 tasks.named('jar') {
@@ -126,7 +129,9 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
                              mod_version            : mod_version,
                              mod_authors            : mod_authors,
                              mod_description        : mod_description,
-                             ntm_de_version_range   : ntm_de_version_range]
+                             ntm_de_version_range   : ntm_de_version_range,
+                             ntm_de_version_range   : ntm_de_version_range,
+                             ntm_de_space_version_range: ntm_de_space_version_range]
     inputs.properties replaceProperties
     expand replaceProperties
     from "src/main/templates"

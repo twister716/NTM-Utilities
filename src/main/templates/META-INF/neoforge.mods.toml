@@ -75,3 +75,10 @@ type = "required"
 versionRange = "${ntm_de_version_range}"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "hbmspace"
+type = "optional"
+versionRange = "${ntm_de_space_version_range}"
+ordering = "AFTER"
+side = "BOTH"

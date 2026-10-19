@@ -5,11 +5,13 @@ import com.hbm.blocks.bomb.*;
 import com.hbm.data.ExplosionData;
 import com.hbm.explosion.ExplosionNukeSmall;
 import com.hbm.items.ModItems;
+import io.github.twister716.hbmutilities.compat.SpaceCompat;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.fml.ModList;
 
 import java.util.HashMap;
 import java.util.List;
@@ -104,6 +106,10 @@ public final class BombTraits {
         registerItem(ModItems.MISSILE_TAINT, BombTrait.label(ExplosionType.MISSILE_TAINT));
         registerItem(ModItems.MISSILE_VOLCANO, BombTrait.label(ExplosionType.MISSILE_TECTONIC));
         registerItem(ModItems.MISSILE_ANTI_BALLISTIC, BombTrait.label(ExplosionType.MISSILE_ABM));
+
+        if (ModList.get().isLoaded("hbmspace")) {
+            SpaceCompat.register();
+        }
     }
 
     private BombTraits() {
