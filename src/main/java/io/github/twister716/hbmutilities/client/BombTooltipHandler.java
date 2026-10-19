@@ -9,6 +9,7 @@ import java.util.List;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.contents.TranslatableContents;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -26,6 +27,24 @@ public final class BombTooltipHandler {
 
     @SubscribeEvent
     public static void onItemTooltip(ItemTooltipEvent event) {
+        addUsedIn(event);
+        addBombTraits(event);
+    }
+
+    private static void addUsedIn(ItemTooltipEvent event) {
+        List<Block> bombs = BombParts.getBombs(event.getItemStack());
+        if (bombs.isEmpty()) {
+            return;
+        }
+
+        List<Component> tooltip = event.getToolTip();
+        tooltip.add(Component.translatable("item.hbm.bomb_part.used_in").withStyle(ChatFormatting.GRAY));
+        for (Block bomb : bombs) {
+            tooltip.add(bomb.getName().withStyle(ChatFormatting.GRAY));
+        }
+    }
+
+    private static void addBombTraits(ItemTooltipEvent event) {
         List<BombTrait> traits = BombTraits.get(event.getItemStack());
         if (traits.isEmpty()) {
             return;
