@@ -1,5 +1,12 @@
 {
-  "itemGroup.hbmutilities": "Example Mod Tab",
-  "block.hbmutilities.example_block": "Example Block",
-  "item.hbmutilities.example_item": "Example Item"
+  "trait.hbmutilities.explosion.nuclear": "Nuclear Bomb",
+  "trait.hbmutilities.explosion.thermonuclear": "Thermonuclear Bomb",
+  "trait.hbmutilities.explosion.extreme": "Extreme Bomb",
+  "trait.hbmutilities.explosion.schrabidium": "Schrabidium Bomb",
+  "trait.hbmutilities.explosion.solinium": "Solinium Bomb",
+  "trait.hbmutilities.explosion.balefire": "Balefire Bomb",
+  "trait.hbmutilities.explosion.salted": "Salted Bomb",
+  "trait.hbmutilities.explosion.conventional": "Conventional Bomb",
+  "trait.hbmutilities.fallout": "Fallout",
+  "trait.hbmutilities.radius": " Radius: %sm"
 }

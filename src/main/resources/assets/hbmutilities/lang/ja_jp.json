@@ -1,0 +1,12 @@
+{
+  "trait.hbmutilities.explosion.nuclear": "原子爆弾",
+  "trait.hbmutilities.explosion.thermonuclear": "水素爆弾",
+  "trait.hbmutilities.explosion.extreme": "高威力爆弾",
+  "trait.hbmutilities.explosion.schrabidium": "シュラビジウム爆弾",
+  "trait.hbmutilities.explosion.solinium": "ソリニウム爆弾",
+  "trait.hbmutilities.explosion.balefire": "ベールファイア爆弾",
+  "trait.hbmutilities.explosion.salted": "加塩原子爆弾",
+  "trait.hbmutilities.explosion.conventional": "通常爆弾",
+  "trait.hbmutilities.fallout": "放射性降下物",
+  "trait.hbmutilities.radius": " 範囲：%sm"
+}
