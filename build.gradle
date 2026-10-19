@@ -5,7 +5,7 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.148'
 }
 
-version = mod_version
+version = "${mod_version}+${minecraft_version}"
 group = mod_group_id
 
 repositories {
@@ -25,7 +25,7 @@ repositories {
 }
 
 base {
-    archivesName = mod_id
+    archivesName = "${mod_id}-neoforge"
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(25)
@@ -129,7 +129,7 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
                              mod_id                 : mod_id,
                              mod_name               : mod_name,
                              mod_license            : mod_license,
-                             mod_version            : mod_version,
+                             mod_version            : project.version,
                              mod_authors            : mod_authors,
                              mod_description        : mod_description,
                              ntm_next_version_range      : ntm_next_version_range,
