@@ -17,8 +17,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 
-import static net.minecraft.world.item.Items.registerItem;
-
 public final class BombTraits {
 
     private static final Map<Class<? extends Block>, Function<Block, List<BombTrait>>> TRAITS = new HashMap<>();
@@ -59,7 +57,7 @@ public final class BombTraits {
         register(BlockDetNuke.class, ExplosionType.NUCLEAR, ExplosionData.MISSILE_RADIUS::get, true);
 
         register(BlockFissureBomb.class, BombTrait.power(ExplosionType.NUCLEAR,
-                () -> (int) ExplosionNukeSmall.PARAMS_MEDIUM.blastRadius));
+                () -> ExplosionNukeSmall.PARAMS_MEDIUM.blastRadius));
 
 
         registerItem(ModItems.MISSILE_GENERIC, BombTrait.power(ExplosionType.MISSILE_HE, () -> 15).withTier(1));
